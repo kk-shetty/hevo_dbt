@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: customers  
+    description: "A summary of customer orders, payments, and lifetime value."
+    columns:
+      - name: customer_id
+        data_tests:
+          - unique
+          - not_null
+          - relationships:
+              to: source('public', 'customers')
+              field: id
+

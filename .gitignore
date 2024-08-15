@@ -1,0 +1,14 @@
+# Ignore Python virtual environments
+venv/
+env/
+.env/
+
+# Ignore dbt profiles.yml
+profiles.yml
+
+target/
+dbt_packages/
+logs/
+
+# Ignore database credentials if stored in a file
+.env
